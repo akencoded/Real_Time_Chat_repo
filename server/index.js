@@ -8,7 +8,13 @@ const socket = require("socket.io");
 const app = express();
 require("dotenv").config();
 
-app.use(cors());
+app.use(cors(
+    {
+        origin:["real-time-chat-repo-2dmm.vercel.app"],
+        methods:["POST","GET"],
+        credentials:true
+    }
+));
 app.use(express.json());
 
 
