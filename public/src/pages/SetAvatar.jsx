@@ -68,7 +68,7 @@ export default function SetAvatar() {
         setIsLoading(false);
     };
     fetchData();
-       },[]);
+       },[api]);
 
   return (
     <>
